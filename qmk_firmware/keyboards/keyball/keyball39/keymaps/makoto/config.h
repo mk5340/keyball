@@ -37,3 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 1
+
+#define TAPPING_TERM 180 // ミリ秒　#キー長押し時間の時間修正
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6 // レイヤーの追加
