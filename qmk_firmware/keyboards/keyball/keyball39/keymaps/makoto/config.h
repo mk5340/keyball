@@ -35,12 +35,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAP_CODE_DELAY 5
 
-#define AUTO_MOUSE_DEFAULT_LAYER 1
 
 #define TAPPING_TERM 180 // ミリ秒　#キー長押し時間の時間修正
 #define DYNAMIC_KEYMAP_LAYER_COUNT 6 // レイヤーの追加
 
-//#define AUTO_MOUSE_DEFAULT_LAYER 4 // 切り替えるマウスレイヤー番号を指定
+#define AUTO_MOUSE_DEFAULT_LAYER 4 // 切り替えるマウスレイヤー番号を指定
 //#define AUTO_MOUSE_TIME 500 // マウスが止まってから元のレイヤーに戻るまでの時間(ms)
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
