@@ -65,6 +65,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QK_BOOT  , KBC_RST  , _______  , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , KBC_RST  , QK_BOOT
   ),
 };
+
+#ifdef COMBO_ENABLE
+const uint16_t PROGMEM my_BTN1[] = {KC_K, KC_L, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(my_BTN1, MS_BTN1),
+};
+#endif
+
+
 // clang-format on
 
 layer_state_t layer_state_set_user(layer_state_t state) {
