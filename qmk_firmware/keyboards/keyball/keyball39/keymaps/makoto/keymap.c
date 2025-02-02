@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM my_BTN1[] = {KC_K, KC_L, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(my_BTN1, MS_BTN1),
+    COMBO(my_BTN1, KC_MS_BTN1),
 };
 #endif
 
