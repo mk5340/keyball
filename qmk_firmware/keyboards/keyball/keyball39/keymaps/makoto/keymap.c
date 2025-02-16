@@ -70,16 +70,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 #ifdef COMBO_ENABLE
-const uint16_t PROGMEM my_BTN1[] = {KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM my_BTN3[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM my_BTN4[] = {KC_O, KC_P, COMBO_END};
-const uint16_t PROGMEM my_BTN2[] = {KC_COMM, KC_DOT, COMBO_END};
+const uint16_t PROGMEM my_BTN2[] = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM my_BTN1[] = {KC_I, KC_O, COMBO_END};
+//const uint16_t PROGMEM my_BTN4[] = {KC_O, KC_P, COMBO_END};
+//const uint16_t PROGMEM my_BTN2[] = {KC_COMM, KC_DOT, COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(my_BTN3, KC_MS_BTN1),
-    #COMBO(my_BTN2, KC_MS_BTN2),
-    COMBO(my_BTN1, KC_MS_BTN2),
-    #COMBO(my_BTN4, KC_MS_BTN4),
+    COMBO(my_BTN1, KC_MS_BTN1),
+    COMBO(my_BTN2, KC_MS_BTN2),
 };
 
 #endif
