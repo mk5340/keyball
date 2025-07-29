@@ -119,10 +119,10 @@ void oledkit_render_info_user(void) {
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static uint8_t prev_cpi_value;
     switch (keycode) {
-    case QK_KB_18:
+    case KC_F:
         if (record->event.pressed) {
             prev_cpi_value = keyball_get_cpi();
-            keyball_set_cpi(2); // 一時的に使うCPIを100で割った値を指定
+            keyball_set_cpi(4); // 一時的に使うCPIを100で割った値を指定
         } else {
             keyball_set_cpi(prev_cpi_value);
         }
