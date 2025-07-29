@@ -114,3 +114,22 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+//CPI値の一時的な変更 https://github.com/Yowkees/keyball/issues/636
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    static uint8_t prev_cpi_value;
+    switch (keycode) {
+    case QK_KB_18:
+        if (record->event.pressed) {
+            prev_cpi_value = keyball_get_cpi();
+            keyball_set_cpi(2); // 一時的に使うCPIを100で割った値を指定
+        } else {
+            keyball_set_cpi(prev_cpi_value);
+        }
+        return false;
+    default:
+        break;
+    }
+    return true;
+}
+
