@@ -44,3 +44,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 5 // スクロール速度 (default: 4)
+
+#define PRECISION_ENABLE // 有効化
+#define PRECISION_CPI 2  // 下げた時のCPI (1/100の値を指定。左記ならCPI 400)
