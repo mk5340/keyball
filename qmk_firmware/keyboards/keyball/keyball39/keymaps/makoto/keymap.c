@@ -70,16 +70,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 #ifdef COMBO_ENABLE
+// 既存のコンボ定義
 const uint16_t PROGMEM my_BTN2[] = {KC_K, KC_L, COMBO_END};
 const uint16_t PROGMEM my_BTN1[] = {KC_I, KC_O, COMBO_END};
-//const uint16_t PROGMEM my_BTN4[] = {KC_O, KC_P, COMBO_END};
-//const uint16_t PROGMEM my_BTN2[] = {KC_COMM, KC_DOT, COMBO_END};
+
+// ★新しく追加するコンボ定義
+const uint16_t PROGMEM r_e_RCLICK[] = {KC_R, KC_E, COMBO_END}; // R+E で右クリック
+const uint16_t PROGMEM s_f_LCLICK[] = {KC_S, KC_F, COMBO_END}; // S+F で左クリック
 
 combo_t key_combos[] = {
     COMBO(my_BTN1, KC_MS_BTN2),
     COMBO(my_BTN2, KC_MS_BTN1),
+    
+    // ★新しく追加するマッピング
+    COMBO(r_e_RCLICK, KC_MS_BTN2), // 右クリックを出力
+    COMBO(s_f_LCLICK, KC_MS_BTN1), // 左クリックを出力
 };
-
 #endif
 
 
